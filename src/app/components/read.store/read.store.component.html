@@ -1,0 +1,9 @@
+<h3>
+  Read Data NgRX Store
+</h3>
+  <ul>
+    <li *ngFor="let store of tutorial | async; let i = index;" (click)="removeTutorial(i)">
+      <a [href]="store?.url">{{ store?.name }}</a>
+    </li>
+  </ul>
+
