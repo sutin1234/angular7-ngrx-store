@@ -1,20 +1,20 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { Read.StoreComponent } from './read.store.component';
+import { ReadStoreComponent } from './read.store.component';
 
 describe('Read.StoreComponent', () => {
-  let component: Read.StoreComponent;
-  let fixture: ComponentFixture<Read.StoreComponent>;
+  let component: ReadStoreComponent;
+  let fixture: ComponentFixture<ReadStoreComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ Read.StoreComponent ]
+      declarations: [ ReadStoreComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Read.StoreComponent);
+    fixture = TestBed.createComponent(ReadStoreComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
